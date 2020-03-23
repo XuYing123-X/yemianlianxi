@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>POLO360练习</title>
+		
+			<!-- 引入reset.css用来清楚浏览器的默认样式  -->
+			<link rel="stylesheet"  type="text/css"  href="css/reset.css" />
+			<!-- 引入page-index -->
+			<link rel="stylesheet"  type="text/css"  href="css/page-index.css" />
+		
+	</head>
+	<body>
+		<!-- id class和文件的命名规范
+		        -命名时尽量使用英文，如果不会可以使用拼音，但是不要英文和拼音混用
+				-命名格式
+				    -驼峰命名法
+					    -首字母小写，每个单词的开头字母大写
+						   例子：aaaBbbCcc helloWorld
+						-也可以所有的字母都小写，单词之间使用_或-连接
+						  aaa-bbb-ccc   aaa_bbb_ccc
+		 -->
+		 
+		 <!-- header开始-->
+		<!-- 创建头部div header -->
+		<div class="header w" >
+			<!-- 在div中设置logo -->
+			
+			<!-- 创建一个导航条 -->
+			<ul class="nav">
+				<li>
+					<a href="#">HOME</a>
+				     <p>Back to home</p>
+					 
+				</li>
+				<li>
+					<a href="#">PRODUCTS</a>
+				     <p>What we have for you</p>
+				</li>
+				<li>
+					<a href="#">SERVICES</a>
+				     <p>Things we do</p>
+				</li>
+				<li>
+					<a href="#">BLOG</a>
+				     <p>Follow our updates</p>
+				</li>
+				<li>
+					<a href="#">CONTACT</a>
+				     <p>Ways to reach us</p>
+				</li>
+			</ul>
+			<div class="logo">
+				<a href="#">
+					<img src="img/logo.png" alt="网站的logo">
+				</a>
+			</div>
+		</div>
+		<!-- header结束 -->
+		
+		
+		
+		<!-- banner开始 -->
+		<div class="banner w">
+			<img src="img/banner01.png" alt="这是一个图片" />
+			
+			<!-- 创建一个div，用于放置导航按钮 -->
+			<div class="pointerDIV">
+				<a href="#"></a>
+				<a class="active"   href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+			</div>
+		</div>
+		<!-- banner结束 -->
+		
+		
+		
+		<!-- content开启 -->
+		<div class="content w  clearfix">
+			<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h1>
+			<!-- 放置内容的div -->
+			
+			<!-- **********div里有一个div,一旦涉及浮动，要考虑高度塌陷问题 *********-->
+			<div class="pl">
+				<h2>Perfect Logic</h2>
+				<p class="p1">All you want your website to do. </p>
+				<!-- 创建一个图片div -->
+				<div class="imgDiv">
+					<img src="img/pic1.png"  alt="小男孩">
+				</div>
+				
+				<p class="p2">
+					Given a query vehicle image, the vehicle re-ID aims to search and retrieve the images of the same vehicle that have been captured by different surveillance cameras with various viewing angles. Based on the observation that essential vehicle attributes
+				</p>
+				<a class="lm"  href="#">Learn More</a>
+			</div>
+			
+			
+			<div class="cs">
+				<h2>Complete Solution</h2>
+				<p class="p1">A tool anything and everything you can think </p>
+					<!-- 创建一个图片div -->
+					<div class="imgDiv">
+						<img src="img/pic2.png"  alt="小女孩">
+					</div>
+					
+					<p class="p2">
+						Given a query vehicle image, the vehicle re-ID aims to search and retrieve the images of the same vehicle that have been captured by different surveillance cameras with various viewing angles. Based on the observation that essential vehicle attributes
+					</p>
+					<a class="lm"  href="#">Learn More</a>
+				</div>
+				
+			
+			
+			
+			<div class="uc">
+				<h2>Uber Culture</h2>
+				<p class="p1">Fresh.Modern and ready for future</p>
+					<!-- 创建一个图片div -->
+					<div class="imgDiv">
+						<img src="img/pic3.png"  alt="大绿球">
+					</div>
+					
+					<p class="p2">
+						Given a query vehicle image, the vehicle re-ID aims to search and retrieve the images of the same vehicle that have been captured by different surveillance cameras with various viewing angles. Based on the observation that essential vehicle attributes
+					</p>
+					<a class="lm"  href="#">Learn More</a>
+			</div>
+				
+			</div>
+		</div>
+		<!-- content结束 -->
+		
+		
+		<!-- contact开始 -->
+		   <div class="contact w  clearfix">
+			   <!-- 创建三个div-->
+			   <div class="sc">
+				   <h2>Social Connection</h2>
+				   <!-- 设置段落-->
+				   <p class="p1">At vero et accusanmus et iusto odio dignissimos ducimus qui blanditiis praesetium</p>
+				   <div class="icon">
+					   <a href="#"><img src="img/rss.png" ></a>
+					   <a href="#"><img src="img/fb.png" ></a>
+					   <a href="#"><img src="img/in.png" ></a>
+					   <a href="#"><img src="img/yt.png" ></a>
+					   <a href="#"><img src="img/tw.png" ></a>
+				   </div>
+				   <h2 class="nl">Newsletter</h2>
+				   <p class="p1">At vero et accusanmus et iusto odio dignissimos ducimus qui blanditiis praesetium</p>
+				   <form action="#">
+				   					   <!-- 文本框-->  <!-- 这里value="your name"是不行的，在文本框和文本域中可以通过placeholder
+				   					               来提示文字（水印）在IE8中不支持 如果要兼容需要使用JS
+				   					   -->
+				   					   
+				   					   <input class="txt2" type="text" placeholder="your email address" ><br>
+				   					   <!-- 文本域-->
+				   					   <button class="btn" >Send it</button>
+				   					   
+				   					   
+				   </form>
+			   </div>
+			   
+			   <!-- 联系栏中间-->
+			   <div class="co">
+				   <!-- 创建一个标题-->
+				   <h2>Contact</h2>
+				   <!-- 创建一个表单。。action是必须指定的，需要一个服务器的地址，需要后台去填的-->
+				   <form action="#">
+					   <!-- 文本框-->  <!-- 这里value="your name"是不行的，在文本框和文本域中可以通过placeholder
+					               来提示文字（水印）在IE8中不支持 如果要兼容需要使用JS
+					   -->
+					   <input class="txt1" type="text"  placeholder="your name" ><br>
+					   <input class="txt2" type="text" placeholder="your email address" ><br>
+					   <!-- 文本域-->
+					   <textarea class="tarea" placeholder=<!-- "message" -->></textarea><br>
+					   <button class="btn" >Send it</button>
+					   
+					   
+				   </form>
+			   </div>
+			   
+			   <div class="nu">
+				   <h2>News Updates</h2>
+				   <p>
+					   <img src="img/11.png" >
+					    retrieve the images of the same vehicle that have been captured by different surveillance cameras with various viewing angles. 
+				   </p>
+				   <p>
+					   <img src="img/13.png" >
+					   the images of the same vehicle that have been captured by different surveillance cameras with various viewing angles. 
+				   </p>
+					<p class="no-margin">
+						<img src="img/14.png" >
+						the same vehicle that have been captured by different surveillance cameras with various viewing angles. 
+					</p>  
+					   
+					  <form action="#"> <button class="btn" >Send it</button></form> 
+				 
+				  
+			   </div>
+			   
+		   </div>
+		<!-- contact结束 -->
+		
+		<!-- footer开始 -->
+		            <div class="footer">
+						<div class="w">
+							<p class="copy">Copyright 2010. Studio VIVROCKS. All Rights Reserved.</p>
+							
+							<p>Site Powered by Wordpress. Design and Developed by VIVROCKS.</p>
+						     <p><a href="#">Home</a> | <a href="#">About</a> | <a href="#">Products</a> | <a href="#">Services</a> | <a href="#">Contact</a> </p>
+							 <p><a href="#">Privacy Policy</a> | <a href="#">Terms of use</a> </p>
+							 
+						</div>
+					</div>
+		<!-- footer结束 -->
+		
+			
+	</body>
+</html>

@@ -1,0 +1,386 @@
+/* 在这里编辑主页的样式表 */
+/* 设置body背景*/
+body{
+	/* 设置body的背景图片,水平方向平铺 */
+	background: url(../img/bd-bg.png) repeat-x;
+	/* height: 3000px; */   /* 这样会有一个滚动条出来 */
+}
+
+/* 解决高度塌陷问题clearfix */
+.clearfix:before,
+.clearfix:after{
+	content:"" ;
+	display: table;
+	clear: both;
+}
+
+/* 固定元素的宽度和居中 */
+.w{
+	width: 940px;
+	margin: 0 auto;
+}
+
+/* 设置header */
+.header{
+/* 	background-color: #bfa; */
+	/* 设置上内边距 */
+	padding-top: 37px;
+	padding-bottom: 46px;
+}
+.logo{
+	margin-left: 15px;
+
+}
+
+/* 设置导航条 */
+.nav{
+	float: right;
+	margin-top: 22px;
+}
+	
+.nav li{
+	float:left;
+	/* 设置左右 下内边距 */
+	padding: 0 10px 8px;
+	/* 设置左边框 */
+	border-left: 1px #d6d6d6 dotted;
+}
+
+/* 设置导航条中的超链接 */
+.nav li a{
+	/* 设置字体颜色 */
+	color: #666;
+	/* 设置字体 */
+	font:bold 14px Georgia ;
+	/* 去除下划线 */
+	text-decoration: none;
+}
+/* 设置超链接的移入效果 */
+.nav a:hover{
+	color:#a1a1a1;
+	text-decoration: underline;
+}
+
+/* 设置导航中的小标题 */
+/* 在chrome浏览器中字体最小支持到12px
+    1-11都显示为12像素
+ */
+.nav li p{
+	color: #b7b7b7;
+	font: 11px tanome;
+}
+
+/* 设置banner */
+.banner{
+	/* 设置高度 ,以显示banner-bg*/
+	height: 356px;
+	
+	/* 设置背景 */
+	background: url(../img/banner-bg.png) no-repeat bottom center;
+	/* 开启一个相对定位 */
+	position: relative;
+	
+}
+
+/* 设置导航按钮 */
+.pointerDIV{
+	/* 开启绝对定位 */
+	position: absolute;
+	/* 为导航点进行定位 */
+	top: 314px;
+	left:15px ;
+}
+.pointerDIV a{
+	/* 设置a浮动,内联元素设置浮动后可以设置宽高 */
+	float: left;
+	
+	/* display: inline-block; */
+	/* 设置宽高 */
+	width: 17px;
+	height: 17px;
+	/* 设置一个左外边距 */
+	margin-left: 4px;
+	
+	background:url(../img/pointer.png)no-repeat;
+}
+
+
+/* 设置超链接的伪类 */
+
+.pointerDIV .active,
+.pointerDIV a:hover{
+	background:url(../img/point-active.png)no-repeat;
+}
+
+
+/* 设置content部分 */
+.content{
+	/* background-color: red; */
+}
+
+.content h1{
+	/* 设置文本居中 */
+	text-align: center;
+	font:bold 24px  Georgia;
+	/* 设置上 下内边距 */
+	padding: 6px 0 20px 0;
+	/* 设置背景 */
+	background:url(../img/line.png)no-repeat bottom center ;
+	/* 设置下外边距 */
+	margin-bottom: 38px;
+}
+
+/* 中间的div */
+.content .pl , .content .cs , .content .uc , 
+.contact .sc , .contact .co , .contact .nu{
+	/* 向左浮动 */
+	float: left;
+	width: 300px;
+	/* height: 100px; */
+	/* background-color: yellow; */
+	
+}
+
+/* 给div添加左右边距 */
+.content .cs ,
+.contact .co{
+	margin: 0 20px;
+}
+
+/* 设置div中的标题 */
+.content  h2{
+	color: #11719e;
+	font: 21px Georgia;
+}
+.content  .p1{
+	color: #8c8c8c;
+	font: 12px Helvetical;
+}
+
+/* 设置图片div */
+.content  .imgDiv{
+	width: 299px;
+	height: 190px;/* 本来图片＋背景 的 高为202,但因为设置了内边距,所以要-12 .如果被内容撑高的就不用-12*/
+	background: url(../img/img-bg.png) no-repeat ;
+	/* 设置上下外边距 */
+	margin: 16px 0 10px 0;
+	/* 设置水平居中 */
+	text-align: center;
+	/* 设置垂直居中 
+	    设置上内边距
+	*/
+   padding-top: 12px;
+	
+}
+/* 设置第二个段落 */
+.content .p2{
+	height: 92px;
+	color: #3e3e3e;
+	font: 13px helvetica;
+}
+
+/* 设置按钮的样式 */
+.content .lm{
+	/* 设置块元素 */
+	display: block;
+	/* 设置宽和高 */
+	width: 163px;
+	height: 41px;
+	/* 设置背景 */
+	background:url(../img/btn1.png) no-repeat;
+	/* 设置下划线 */
+	text-decoration:none;
+	color: #016999;
+	/* 设置垂直居中  行高与元素一样高为40 */
+	font: 12px/40px helvetica;
+	/* 首行缩进 1字*/
+	text-indent: 1.11em;
+	margin-bottom:35px ;
+}
+
+
+
+/* 设置背景 */
+.contact{
+	background:  url(../img/line.png)   no-repeat top center;
+}
+
+
+/* 设置联系栏高度和背景颜色,一会删了*/
+/* .contact .sc , .contact .co , .contact .nu{
+	height: 500px; */
+	/* background-color: yellow; */
+/* } */
+
+
+
+/* 设置联系栏中的表单项 */
+/* 文本框 */
+.contact .txt1{
+	width: 276px;  /* 本来指定宽为296px,但因为设置了左右边距,所以要-(10+10) .如果被内容撑宽的就不用-20*/
+	height: 33px;
+	background:url(../img/input.png) no-repeat;
+	
+	/* 去除默认边框 */
+	border: none;
+	/* 设置下外边距 */
+	margin: 0 0 16px 0;
+	padding: 0px 10px;
+	/* 设置行高,使文本居中 */   /* 这里其实并不用写,有些浏览器文本在上面所以加这行*/
+	line-height: 33px;
+}
+.contact .txt2{
+	width: 276px;
+	height: 33px;
+	background:url(../img/input2.png) no-repeat;
+	border: none;
+	/* 去除滚动条 
+	  overflow:auto;
+	*/
+   margin: 0 0 16px 0;
+   padding: 0px 10px;
+   line-height: 33px;
+}
+/* 文本域 */
+.contact .tarea{
+	width: 276px;/* 296-20 133-20 */
+	height: 113px;
+	background:url(../img/btn3.png) no-repeat;
+	border: none;
+	/* 设置文本域不能调节大小*/
+	resize: none;
+	padding: 10px;
+	
+}
+.contact .btn{
+	width: 163px;
+	height: 32px;
+	background:url(../img/btn5.png) no-repeat;
+	border: none;
+	margin-top: 11px;
+	margin-bottom: 23px;
+	color: white;
+	font: 13px Georgia;
+	/* 字体位置 */
+	text-align: left;
+	/* 字体缩进 */
+	text-indent: 1em;
+	
+	/* 可以用来设置鼠标指针的样式 */
+	cursor:pointer ;/* 手型 */
+	cursor: crosshair;/* 十字型 */
+}
+
+/* 设置标题 */
+.contact h2{
+	color: #444;
+	font: 18px/1 georgia;
+	border-bottom: 1px dashed #d3d3d3;
+	/* 设置内边距 */
+	padding: 42px 0 10px 0;
+	/* 设置一个下外边距 */
+	margin-bottom: 15px;
+}
+
+/* 设计联系栏左侧 */
+.sc .p1{
+	color: #444;
+	font: 12px/1 helvetica;
+	
+}
+
+.sc .icon{
+	/* 使五个图标之间无空格
+	    设置字体大小为0
+	 */
+	font-size: 0;
+	/* 设置上外边距 */
+	margin-top: 4px;
+}
+
+/* 设置小图标 */
+.sc .icon a{
+	margin-right: 6px;
+	
+}
+/* 设置左侧第二个标题 */
+.sc .nl{
+	font:bold 18px/1  "gill sans mt";
+	/* 设置内边距 */
+	padding: 28px 0px 10px 0px;
+	/* 设置下内边距 */
+	/* margin-bottom: 0px; */
+
+
+}
+/* 设置左侧的表单项 */
+.sc .txt2{
+	margin-top: 22px;
+	margin-bottom: 0px;
+}
+
+
+
+/*设置联系栏右侧  */
+
+
+.nu p{
+	color: #444;
+	font: 12px/1 helvetica;
+	height: 58px;
+	border-bottom: 1px dashed #d3d3d3;
+	margin-bottom: 14px;
+	padding-bottom: 9px;
+	
+}
+.nu img{
+	/* 设置向左浮动 */
+	float:left;
+	margin-right: 8px;
+}
+/* .nu .btn{
+	margin-top: 0px;
+}
+ */
+.nu .no-margin{
+	margin-bottom: 0px;
+}
+/* 设置底部 */
+.footer{
+	height: 170px;
+	background-color: #333;
+	/* 设置上边框 */
+	border-top: 10px solid #4c4c4c;
+	
+}
+
+/* 设置底部文字样式 */
+.footer a , .footer p{
+	color: #999;
+	font: 11px helvetica;
+	/* 去掉下划线 */
+	/* text-decoration: none; */  /* 这里本身就没有下划线*/
+	
+}
+
+/* 设置a元素的hover */
+.footer a:hover{
+	color:#cccaca;
+	/* text-decoration: underline; */  /* 这里不需要加,因为已有这个效果*/
+}
+
+.footer p{
+	margin-left: 8px;
+	margin-right: 23px;
+	margin-bottom: 6px;
+}
+
+.footer .w{
+	/* margin: 18px 23px 0 8px; */  /* 这里不能设置外边距,因为上面w设置过了0 auto*/
+	padding-top:18px ;
+	
+}
+
+.footer .copy{
+	float: right;
+}
